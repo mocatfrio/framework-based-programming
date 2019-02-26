@@ -86,5 +86,7 @@ A documentation of framework-based programming course 2019
 	        System.out.println(book[0]);
       }
       ```
+      
 * Example
+
     ![ss1](/img/ss1.png)
