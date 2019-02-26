@@ -71,7 +71,7 @@ A documentation of framework-based programming course 2019
       System.out.print("Input Book's ID : ");
       id = idReader.readLine();
       ```
-  3. API connection
+  3. API connection based on User's input (book's id)
       ```java
       URL url = new URL("http://libgen.io/json.php?ids=" + id + "&fields=Title,Author,Year,Publisher,City,Pages,Topic,Language,CoverUrl,Issn");
       HttpURLConnection connection = (HttpURLConnection) url.openConnection();
