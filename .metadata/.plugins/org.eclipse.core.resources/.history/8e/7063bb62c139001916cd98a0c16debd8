@@ -1,0 +1,37 @@
+package com.example.json_to_pojo;
+
+import java.util.Scanner;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public class BookResponse {
+	public static void main(String[] args) throws IOException {
+		String endpointApi = "https://www.booknomads.com/api/v0/isbn/";
+		String isbn;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("### Pencarian buku berdasarkan ISBN ###");
+		System.out.print("Masukkan ISBN: ");
+		isbn = input.next();
+		
+		try(Reader reader = new InputStreamReader(BookResponse.class.getResourceAsStream("/Server2.json"), "UTF-8")){
+            Gson gson = new GsonBuilder().create();
+            Person p = gson.fromJson(reader, YourPOJOClass.class);
+            System.out.println(p);
+        }
+		
+		System.out.println("ISBN: " + isbn);
+	}
+	public static void main(String[] args)  {
+        
+    }
+	public static BookResponse parseJSON(String response) {
+        Gson gson = new GsonBuilder().create();
+        BookResponse book = gson.fromJson(response, BookResponse.class);
+        return book;
+    }
+}

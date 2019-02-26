@@ -1,0 +1,19 @@
+package com.example.json_to_pojo;
+
+public class Authors {
+    private String Name;
+
+    public String getName () {
+        return Name;
+    }
+
+    public void setName (String Name) {
+        this.Name = Name;
+    }
+
+    @Override
+    public String toString() {
+        return "Author's Name = "+ Name + "\n";
+    }
+}
+	

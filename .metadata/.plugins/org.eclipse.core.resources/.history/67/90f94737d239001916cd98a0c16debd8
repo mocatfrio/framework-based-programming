@@ -1,0 +1,16 @@
+package com.example.json_to_pojo;
+
+import com.google.gson.annotations.SerializedName;
+
+public class ErrorHandling {
+	private String type;
+	private String error;
+	
+	public String getType () {
+        return type;
+    }
+
+    public void setType (String type) {
+        this.isbn = type;
+    }
+}

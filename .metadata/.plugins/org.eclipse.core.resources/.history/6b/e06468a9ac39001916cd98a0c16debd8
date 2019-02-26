@@ -1,0 +1,18 @@
+package json_to_pojo;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		String word;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("### Oxford Dictionary ###");
+		System.out.print("Cari kata: ");
+		word = input.next();
+		
+		System.out.println("Kata yang dicari: " + word);
+		
+	}
+}

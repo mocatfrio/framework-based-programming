@@ -1,0 +1,35 @@
+package com.example.json_to_pojo;
+
+import com.google.gson.annotations.SerializedName;
+
+public class ErrorHandling {
+	private String type;
+	private String error;
+	
+	public String getType () {
+        return type;
+    }
+
+    public void setType (String type) {
+        this.type = type;
+    }
+
+	public String getError () {
+        return error;
+    }
+
+    public void setError (String error) {
+        this.error = error;
+    }
+    
+    @Override
+    public String toString() {
+    	return "Error type = " + type + "\nError = " + authors +
+    			"\n\t ISBN = "+ isbn +
+    			"\n\t Description = "+ description + 
+    			"\n\t Subtitle = "+ subtitle + 
+    			"\n\t Subjects = " + subjects + 
+    			"\n\t Language Code = " + languageCode + 
+    			"\n\t Cover Thumb = " + coverThumb + "\n";
+    }
+}

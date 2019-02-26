@@ -1,0 +1,21 @@
+package com.example.json_to_pojo;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		String isbn;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("### Pencarian buku berdasarkan ISBN ###");
+		System.out.print("Masukkan ISBN: ");
+		isbn = input.next();
+		
+		System.out.println("ISBN: " + isbn);
+	}
+}
+
+private class JsonToJava {
+	
+}

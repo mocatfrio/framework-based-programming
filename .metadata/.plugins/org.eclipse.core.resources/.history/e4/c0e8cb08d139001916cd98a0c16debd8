@@ -1,0 +1,102 @@
+package com.example.json_to_pojo;
+
+import java.util.List;
+
+import com.google.gson.annotations.SerializedName;
+
+public class Book{
+    @SerializedName("Title")
+	private String title;
+	@SerializedName("Authors")
+    private Authors[] authors;
+    @SerializedName("ISBN")
+    private String isbn;
+    @SerializedName("Description")
+    private String description;
+    @SerializedName("Subtitle")
+    private String subtitle;
+    @SerializedName("Subjects")
+    private List<string> subjects;
+    @SerializedName("LanguageCode")
+    private String languageCode;
+    @SerializedName("CoverThumb")
+    private String coverThumb;
+    
+
+    public String getTitle () {
+        return title;
+    }
+
+    public void setTitle (String title) {
+        this.title = title;
+    }
+    
+    public Authors[] getAuthors () {
+        return authors;
+    }
+
+    public void setAuthors (Authors[] authors) {
+        this.authors = authors;
+    }
+    
+    public String getIsbn () {
+        return isbn;
+    }
+
+    public void setIsbn (String isbn) {
+        this.isbn = isbn;
+    }
+    
+    public String getDescription () {
+        return description;
+    }
+
+    public void setDescription (String description) {
+        this.description = description;
+    }
+    
+    public String getSubtitle () {
+        return subtitle;
+    }
+
+    public void setSubtitle (String subtitle) {
+        this.subtitle = subtitle;
+    }
+    
+    public String[] getSubjects () {
+        return subjects;
+    }
+
+    public void setSubjects (String[] subjects) {
+        this.subjects = subjects;
+    }
+    
+    public String getLanguageCode () {
+        return languageCode;
+    }
+
+    public void setLanguageCode (String languageCode) {
+        this.languageCode = languageCode;
+    }
+    
+    public String getCoverThumb () {
+        return coverThumb;
+    }
+
+    public void setCoverThumb (String coverThumb) {
+        this.coverThumb = coverThumb;
+    }
+
+    @Override
+    public String toString() {
+    	return "Deskripsi buku yang dicari:\n" + 
+    			"\n\t Title = "+ title + 
+    			"\n\t Authors = " + authors +
+    			"\n\t ISBN = "+ isbn +
+    			"\n\t Description = "+ description + 
+    			"\n\t Subtitle = "+ subtitle + 
+    			"\n\t Subjects = " + subjects + 
+    			"\n\t Language Code = " + languageCode + 
+    			"\n\t Cover Thumb = " + coverThumb + "\n";
+    }
+}

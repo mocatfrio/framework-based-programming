@@ -1,0 +1,59 @@
+package com.example.json_to_pojo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+import java.net.URLConnection;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public class BookResponse {
+	# download the json as text
+	private static String readUrl (String urlString) throws Exception {
+	    BufferedReader reader = null;
+	    try {
+	        URL url = new URL(urlString);
+	        reader = new BufferedReader(new InputStreamReader(url.openStream()));
+	        StringBuffer buffer = new StringBuffer();
+	        int read;
+	        char[] chars = new char[1024];
+	        while ((read = reader.read(chars)) != -1)
+	            buffer.append(chars, 0, read); 
+
+	        return buffer.toString();
+	    } finally {
+	        if (reader != null)
+	            reader.close();
+	    }
+	}
+	
+	public static void main(String[] args) throws IOException {
+		String endpointApi = "https://www.booknomads.com/api/v0/isbn/";
+		String isbn;
+		
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
+		
+		System.out.println("### Pencarian buku berdasarkan ISBN ###");
+		System.out.print("Masukkan ISBN: ");
+		isbn = br.readLine();
+		
+//		System.out.println(endpointApi + isbn);
+		
+	  // Connect to the URL using java's native library
+	    URL url = new URL(endpointApi + isbn);
+	    URLConnection request = url.openConnection();
+	    request.connect();
+		
+		try(Reader reader = new InputStreamReader(BookResponse.class.getResourceAsStream(endpointApi + isbn), "UTF-8")){
+            Gson gson = new GsonBuilder().create();
+            Book book = gson.fromJson(reader, Book.class);
+            System.out.println(book);
+        }	
+	}
+}
+

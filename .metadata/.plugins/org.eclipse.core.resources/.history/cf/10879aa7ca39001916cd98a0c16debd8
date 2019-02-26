@@ -1,0 +1,53 @@
+package com.example.json_to_pojo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public class BookResponse {
+	public static void main(String[] args) throws IOException {
+//		String isbn;
+//		
+//		InputStreamReader isbnInput = new InputStreamReader(System.in);
+//		BufferedReader isbnReader = new BufferedReader(isbnInput);
+//		
+//		System.out.println("### Pencarian buku berdasarkan ISBN ###");
+//		System.out.print("Masukkan ISBN: ");
+//		isbn = isbnReader.readLine();
+//        
+//        URL url = new URL("https://www.booknomads.com/api/v0/isbn/" + isbn);
+//        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+//        connection.setRequestMethod("GET");
+//        connection.connect();
+        
+//        BufferedReader jsonReader  = new BufferedReader(new InputStreamReader(connection.getInputStream()));          
+//        Gson gson = new GsonBuilder().create();
+        String test = "{ 'Title' : 'Speak english','CoverThumb' : '','Subjects' : ['Non-fictie informatief/professioneel algemeen\"\n" + 
+        		"   ],\n" + 
+        		"   \"LanguageCode\" : \"nl\",\n" + 
+        		"   \"Subtitle\" : \"\",\n" + 
+        		"   \"Authors\" : [\n" + 
+        		"      {\n" + 
+        		"         \"Name\" : \"Louis\"\n" + 
+        		"      }\n" + 
+        		"   ],\n" + 
+        		"   \"ISBN\" : \"9789000010134\",\n" + 
+        		"   \"Description\" : \"\"\n" + 
+        		"}\n" + 
+        		"";
+        Gson gson = new Gson();
+        Book book = gson.fromJson(test, Book.class);
+        System.out.println(book);
+        
+//        Reader reader = new InputStreamReader(BookResponse.class.getResourceAsStream("https://www.booknomads.com/api/v0/isbn/" + isbn), "UTF-8");
+//        Gson gson = new GsonBuilder().create();
+//        Book book = gson.fromJson(reader, Book.class);
+//        System.out.println(book);
+    }
+}
+
