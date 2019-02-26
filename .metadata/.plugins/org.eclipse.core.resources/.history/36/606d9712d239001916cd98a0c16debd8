@@ -1,8 +1,0 @@
-package com.example.json_to_pojo;
-
-import com.google.gson.annotations.SerializedName;
-
-public class ErrorHandling {
-	@SerializedName("Name")
-	private String name;
-}
