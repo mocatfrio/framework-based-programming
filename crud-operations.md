@@ -147,11 +147,11 @@
     * GET
       * Get all users
 
-        ![ss5](/img/ss5.png =10x)
+        <img src="/img/ss5.png" width="200">
 
       * Get specific user by id
 
-        ![ss6](/img/ss6.png =10x)
+        <img src="/img/ss6.png" width="200">
 
     * POST (Create user)
         
