@@ -1,8 +1,20 @@
 # Framework-based Programming
 A documentation of framework-based programming course 2019
 
-# Table of Content
+## Requirements
+1. Java SE Development Kit 12 
+2. Java SE Runtime Environment 8 
+
+## Tools
+1. [Apache Maven 3.6.0](https://maven.apache.org/download.cgi)
+2. [Spring Boot](https://spring.io/projects/spring-boot) (Java-based framework used to create micro-service)
+3. [Spring Tool Suite (STS) 3](https://spring.io/tools3/sts/all) as IDE
+4. [Postman](https://www.getpostman.com/downloads/)
+
+## Table of Content
 1. [Simple API Access Program](simple-api-access-program.md)
 2. Week 7 Tutorials:
    - [Apache Maven](apache-maven.md)
    - [RESTful Web Services](restful-web-services.md)
+   - [CRUD Operations](crud-operations.md)
+   - [File Uploads](file-uploads.md)

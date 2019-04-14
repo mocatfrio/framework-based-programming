@@ -1,10 +1,5 @@
 # RESTful Web Services
 
-## Tools
-1. Spring Boot (Java-based framework used to create micro-service)
-2. [Spring Tool Suite (STS) 3](https://spring.io/tools3/sts/all) as IDE
-
-## Steps
 1. Make a Spring Boot project by `File > New > Spring Starter Project`
    
    ![ss2](/img/ss2.png)

@@ -1,9 +1,5 @@
 # Apache Maven
 
-## Tools
-1. [Apache Maven 3.6.0](https://maven.apache.org/download.cgi)
-
-## Steps
 1. Verify Maven installation by checking the version
     ```bash
     mvn --version

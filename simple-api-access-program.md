@@ -1,9 +1,7 @@
 # Simple API Access Program
 
-## Tools
-1. Spring Tools Suite 4
-2. JDK 1.8
-3. Public API from [**The Library Genesis API**](http://garbage.world/posts/libgen/)
+
+1. This program using Public API from [**The Library Genesis API**](http://garbage.world/posts/libgen/)
    
     ```bash
     curl -s 'http://libgen.io/json.php?ids=1&fields=Title,Author,Year,Publisher,City,Pages,Topic,Language,CoverUrl,Issn' | json_pp
@@ -26,7 +24,6 @@
     ```
     Source: https://github.com/toddmotto/public-apis#books
 
-## Steps
 1. Make a POJO (Plain Old Java Object) of JSON
     ```java
     public class Book {
@@ -60,7 +57,7 @@
       }
     }
     ```
-2. Catch on User's input 
+2. Take the User's input 
     ```java
     String id;
 
