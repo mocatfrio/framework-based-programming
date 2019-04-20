@@ -75,4 +75,4 @@
 
 ## Full Code
 
-[RESTful Web Services](/restful-web-services)
+[RESTful Web Services](book-management/)

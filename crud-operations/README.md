@@ -176,4 +176,4 @@
 
 ## Full Code
 
-[Simple CRUD Operations Program](/crud-operations)
+[Simple CRUD Operations Program](book-management/)

@@ -82,4 +82,4 @@
 
 ## Full Code
 
-[Apache Maven Program](/apache-maven)
+[Apache Maven Program](book-management/)

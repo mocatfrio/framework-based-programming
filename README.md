@@ -12,9 +12,11 @@ A documentation of framework-based programming course 2019
 4. [Postman](https://www.getpostman.com/downloads/)
 
 ## Table of Content
-1. [Simple API Access Program](simple-api-access-program.md)
+1. [Simple API Access Program](simple-api-access-program/)
 2. Week 7 Tutorials:
-   - [Apache Maven](apache-maven.md)
-   - [RESTful Web Services](restful-web-services.md)
-   - [CRUD Operations](crud-operations.md)
-   - [File Uploads](file-uploads.md)
+   - [Apache Maven](apache-maven/)
+   - [RESTful Web Services](restful-web-services/)
+   - [CRUD Operations](crud-operations/)
+   - [File Uploads](file-uploads/)
+3. Week 8 Tutorial:
+   - [Spring Security](spring-security/)
