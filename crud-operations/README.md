@@ -1,6 +1,6 @@
 # CRUD Operations (Without Reactive)
 
-1. Make a Spring Boot project
+1. Create new Spring Boot project
 2. To make a CRUD operations program, we need:
    * Model
    * Controller

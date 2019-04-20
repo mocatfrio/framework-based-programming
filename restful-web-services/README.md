@@ -1,6 +1,6 @@
 # RESTful Web Services
 
-1. Make a Spring Boot project by `File > New > Spring Starter Project`
+1. Create new Spring Boot project by `File > New > Spring Starter Project`
    
     <img src="/img/ss2.png" width="500">
 

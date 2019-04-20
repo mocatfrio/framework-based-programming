@@ -1,10 +1,7 @@
 # File Uploads
 
-1. Make a Spring Boot project
-2. To make a CRUD operations program, we need:
-   * Controller
-   * Service
-3. Create the controller named **FileController** that includes POST methods.
+1. Create new Spring Boot project
+2. Create a controller named **FileController** that includes POST methods.
    
     ```java
     @RestController
@@ -28,13 +25,13 @@
         }
     }
     ```
-4. Create **FileUploadService** Interface
+3. Create **FileUploadService** Interface
     ```java
     public interface FileUploadService {
         void uploadFile(MultipartFile file) throws IOException;
     }
     ```
-5. Then, create **FileUploadServerImpl** that implements FileUploadService Interface
+4. Then, create **FileUploadServerImpl** that implements FileUploadService Interface
     ```java
     @Service
     public class FileUploadServerImpl implements FileUploadService {
@@ -56,8 +53,8 @@
         }
     }
     ```
-8. Run the project by `Run As... > Spring Boot App`
-9. Check file uploads using Postman
+5. Run the project by `Run As... > Spring Boot App`
+6. Check file uploads using Postman
        
     ![ss12](/img/ss12.png)
 
