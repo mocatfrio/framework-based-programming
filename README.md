@@ -18,5 +18,5 @@ A documentation of framework-based programming course 2019
    - [RESTful Web Services](restful-web-services/)
    - [CRUD Operations](crud-operations/)
    - [File Uploads](file-uploads/)
-3. Week 8 Tutorial:
-   - [Spring Security](spring-security/)
+3. Week 8 Tutorial: [Spring Security](spring-security/)
+4. Week 9 Tutorial: [Ticket Management](ticket-management/) 
